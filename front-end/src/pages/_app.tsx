@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="flex">
       <Sidebar />
       <main
-        className={`flex min-h-screen w-full flex-col bg-gray-50 items-center justify-between p-24 ${poppins.className}`}
+        className={`min-h-screen w-full text-gray-900 font-medium bg-gray-50 ${poppins.className}`}
       >
         <Component {...pageProps} />
       </main>
