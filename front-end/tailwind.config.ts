@@ -29,7 +29,7 @@ const config: Config = {
         900: '#121212 ',
       },
       violet: {
-        50: '#F2EEFC',
+        50: '#E5E5FC',
         100: '#D6CBF5',
         200: '#C2B2F0',
         300: '#A78FEA ',
@@ -54,6 +54,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }
 export default config
