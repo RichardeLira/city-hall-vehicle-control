@@ -1,3 +1,3 @@
 export default function MunicipalVehicles() {
-  return <div>Municipal Vehicles</div>
+  return <div>Veículos Municipais</div>
 }
