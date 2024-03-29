@@ -11,6 +11,7 @@ export default function Sidebar() {
   const handleSubmenuToggle = (path: string) => {
     setActiveSubmenu(activeSubmenu === path ? null : path)
   }
+
   return (
     <div
       className={`${isSidebarActive ? 'w-[360px]' : 'w-[96px]'} relative transition-all duration-1000 ease-in-out flex-none h-screen flex flex-col font-medium bg-white`}

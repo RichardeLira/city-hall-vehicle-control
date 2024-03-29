@@ -1,4 +1,4 @@
-import { Car, Coins, House, Money } from '@phosphor-icons/react'
+import { Car, GasCan, House, Money } from '@phosphor-icons/react'
 
 const getIconByName = (iconName: string, isActive: boolean, size: number) => {
   switch (iconName) {
@@ -7,7 +7,7 @@ const getIconByName = (iconName: string, isActive: boolean, size: number) => {
     case 'Car':
       return <Car size={size} color={isActive ? '#9579E5' : '#ABB0B4'} />
     case 'Cost':
-      return <Coins size={size} color={isActive ? '#9579E5' : '#ABB0B4'} />
+      return <GasCan size={size} color={isActive ? '#9579E5' : '#ABB0B4'} />
     case 'Bill':
       return <Money size={size} color={isActive ? '#9579E5' : '#ABB0B4'} />
 
