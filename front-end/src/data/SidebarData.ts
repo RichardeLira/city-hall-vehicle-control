@@ -1,5 +1,11 @@
 export const SidebarData = [
   {
+    title: 'Início',
+    path: 'home',
+    icon: 'Home',
+    submenu: [],
+  },
+  {
     title: 'Controle de Veículos',
     path: 'vehicle-control',
     icon: 'Car',
@@ -15,6 +21,14 @@ export const SidebarData = [
       {
         path: 'granted-vehicles',
         title: 'Veículos Cedidos',
+      },
+      {
+        path: 'vehicles-destination',
+        title: 'Cadastro de Destinação',
+      },
+      {
+        path: 'destination-cancellation',
+        title: 'Baixa de Destinação',
       },
     ],
   },
@@ -44,7 +58,7 @@ export const SidebarData = [
       },
       {
         path: 'generation-and-dispatch',
-        title: 'Manutenção',
+        title: 'Geração e Envio',
       },
     ],
   },
