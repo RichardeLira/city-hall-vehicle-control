@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="flex">
       <Sidebar />
       <main
-        className={`min-h-screen w-full text-black font-medium bg-gray-50 ${poppins.className}`}
+        className={`px-8 py-12 min-h-screen w-full text-black font-medium bg-gray-50 ${poppins.className}`}
       >
         <Component {...pageProps} />
       </main>
