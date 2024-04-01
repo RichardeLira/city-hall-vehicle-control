@@ -30,13 +30,13 @@ export default function PageLabel({
 
   return (
     <div
-      className={`flex h-12 w-full items-center p-3 rounded-xl overflow-hidden ${pathActive ? 'bg-gray-50' : 'hover:bg-gray-50'}`}
+      className={`flex h-12 w-full items-center overflow-hidden rounded-xl p-3 ${pathActive ? 'bg-gray-50' : 'hover:bg-gray-50'}`}
     >
       {/* Page Label */}
       {sidebarOpen || !hasSubmenu ? (
         <Link
           href={`/${path}`}
-          className="flex flex-1 items-center gap-3 h-11 text-base"
+          className="flex h-11 flex-1 items-center gap-3 text-base"
         >
           <div className="w-fit">{getIconByName(icon, pathActive, 24)}</div>
           <span
@@ -48,7 +48,7 @@ export default function PageLabel({
       ) : (
         <button
           onClick={handleSubmenuContextActive}
-          className="flex flex-1 items-center gap-3 h-11 text-base"
+          className="flex h-11 flex-1 items-center gap-3 text-base"
         >
           <div className="w-fit">{getIconByName(icon, pathActive, 24)}</div>
           <span

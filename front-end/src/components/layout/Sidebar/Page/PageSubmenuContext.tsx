@@ -20,10 +20,10 @@ export default function PageSubmenuContext({
   const pathname = usePathname()
 
   return (
-    <div className="absolute w-fit rounded-lg bg-white border-gray-100 border-[1px] shadow-md right-0 translate-x-full">
+    <div className="absolute right-0 w-fit translate-x-full rounded-lg border-[1px] border-gray-100 bg-white shadow-md">
       <ul>
         <li
-          className={`p-2 whitespace-nowrap hover:bg-gray-100 hover:text-black ${pathname.includes(path) ? 'text-black' : 'text-gray-300'}`}
+          className={`whitespace-nowrap p-2 hover:bg-gray-100 hover:text-black ${pathname.includes(path) ? 'text-black' : 'text-gray-300'}`}
         >
           <Link href={`/${path}`}>{title}</Link>
         </li>
@@ -31,7 +31,7 @@ export default function PageSubmenuContext({
         {submenu.map((subpage) => (
           <li
             key={subpage.path}
-            className={`p-2 whitespace-nowrap hover:bg-gray-100 hover:text-gray-500 ${pathname.includes(subpage.path) ? 'text-black' : 'text-gray-300'}`}
+            className={`whitespace-nowrap p-2 hover:bg-gray-100 hover:text-gray-500 ${pathname.includes(subpage.path) ? 'text-black' : 'text-gray-300'}`}
           >
             <Link href={`/${path}/${subpage.path}`}>{subpage.title}</Link>
           </li>

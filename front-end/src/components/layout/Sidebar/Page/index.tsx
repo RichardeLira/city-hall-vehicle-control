@@ -70,11 +70,11 @@ export default function Page({
       <div>
         {/* Active Highlight */}
         {pathname.includes(path) && (
-          <div className="w-2 h-[52px] absolute left-0 bg-violet-400 rounded-r-xl" />
+          <div className="absolute left-0 h-[52px] w-2 rounded-r-xl bg-violet-400" />
         )}
 
         {/* Page Label */}
-        <div className="h-[52px] flex items-center w-full">
+        <div className="flex h-[52px] w-full items-center">
           <PageLabel
             key={path}
             icon={icon}

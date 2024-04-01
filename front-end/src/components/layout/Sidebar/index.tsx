@@ -14,7 +14,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`${isSidebarActive ? 'w-[360px]' : 'w-[96px]'} relative transition-all duration-1000 ease-in-out flex-none h-screen flex flex-col font-medium bg-white`}
+      className={`${isSidebarActive ? 'w-[360px]' : 'w-[96px]'} relative flex h-screen flex-none flex-col bg-white font-medium transition-all duration-1000 ease-in-out`}
     >
       {/* Upper section */}
       <div className="relative p-8 pb-16">
@@ -22,10 +22,10 @@ export default function Sidebar() {
           <h2 className="font-semibold">SGF</h2>
         </Link>
         <button
-          className={`absolute right-0 translate-x-1/2 w-11 h-11 bg-gray-50 rounded-full flex items-center justify-center transform transition duration-300 ease-in-out ${isSidebarActive ? 'rotate-0' : 'rotate-180'}`}
+          className={`absolute right-0 flex h-11 w-11 translate-x-1/2 transform items-center justify-center rounded-full bg-gray-50 transition duration-300 ease-in-out ${isSidebarActive ? 'rotate-0' : 'rotate-180'}`}
           onClick={() => setIsSidebarActive(!isSidebarActive)}
         >
-          <div className="w-8 h-8 rounded-full bg-violet-50 hover:bg-violet-100 flex items-center justify-center">
+          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-violet-50 hover:bg-violet-100">
             <CaretLeft
               size={24}
               className="text-violet-400 hover:text-violet-500"
@@ -35,10 +35,10 @@ export default function Sidebar() {
       </div>
 
       {/* Separator */}
-      <div className="w-full h-[6px] bg-gray-50" />
+      <div className="h-[6px] w-full bg-gray-50" />
 
       {/* Pages */}
-      <div className="overflow-y-auto scrollbar-track-white scrollbar-thin scrollbar-thumb-gray-200 flex-1 px-6 py-8 text-gray-300">
+      <div className="scrollbar-track-white scrollbar-thin scrollbar-thumb-gray-200 flex-1 overflow-y-auto px-6 py-8 text-gray-300">
         <ul className="flex flex-col gap-2">
           {SidebarData.map((page) => (
             <Page
@@ -56,11 +56,11 @@ export default function Sidebar() {
       </div>
 
       {/* Separator */}
-      <div className="w-full h-[6px] bg-gray-50" />
+      <div className="h-[6px] w-full bg-gray-50" />
 
       {/* Bottom section */}
-      <div className="flex overflow-hidden gap-3 p-6">
-        <div className="w-12 h-12 bg-gray-100 rounded-full items-center justify-center flex flex-none">
+      <div className="flex gap-3 overflow-hidden p-6">
+        <div className="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-gray-100">
           <User size={24} />
         </div>
         {isSidebarActive && (

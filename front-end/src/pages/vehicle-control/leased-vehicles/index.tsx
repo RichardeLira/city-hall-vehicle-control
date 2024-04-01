@@ -20,14 +20,14 @@ export default function LeasedVehicles() {
   }
 
   return (
-    <div className="w-full h-full">
+    <div className="h-full w-full">
       <div className="w-full">
         <Searchbox
           placeholder="Procurar por descrição do veículo"
           onSearch={handleSearch}
         />
-        <div className="flex mt-4 justify-between items-center">
-          <div className="flex gap-2 items-center">
+        <div className="mt-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
             <h1 className="text-2xl">Veículos Locados</h1>
             <Filter
               placeholder="Ano"
@@ -43,7 +43,7 @@ export default function LeasedVehicles() {
             />
           </div>
 
-          <div className="flex gap-2 items-center">
+          <div className="flex items-center gap-2">
             <CustomButton onClick={resetFilters}>
               Redefinir Filtros
             </CustomButton>
